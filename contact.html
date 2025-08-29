@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MECA Glow-Up Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff80ab, #b388ff);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    select, button {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+    }
+    button {
+      background: #ff4081;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #f50057;
+    }
+    .output {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>💖 MECA Glow-Up Assistant 💖</h2>
+    <p>Select your skin type:</p>
+    <select id="skinType">
+      <option value="oily">Oily</option>
+      <option value="dry">Dry</option>
+      <option value="mixed">Mixed</option>
+    </select>
+    <br>
+    <button onclick="showRoutine()">Get My Routine</button>
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    function showRoutine() {
+      const type = document.getElementById("skinType").value;
+      let routine = "";
+
+      if (type === "oily") {
+        routine = "✨ Routine for Oily Skin:<br>- Oil-free cleanser<br>- Clay mask 2x/week<br>- Light moisturizer";
+      } else if (type === "dry") {
+        routine = "✨ Routine for Dry Skin:<br>- Hydrating cleanser<br>- Rich moisturizer<br>- Aloe vera mask";
+      } else if (type === "mixed") {
+        routine = "✨ Routine for Mixed Skin:<br>- Gentle cleanser<br>- Balance toner<br>- Gel moisturizer";
+      }
+
+      document.getElementById("output").innerHTML = routine;
+    }
+  </script>
+</body>
+</html>

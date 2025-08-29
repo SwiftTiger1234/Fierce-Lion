@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: #fffafc; /* soft pastel pink */
+  color: #444;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: #ffe6f0; /* light girly pink */
+  text-align: center;
+  }
+
+/* About Myself */
+.TopSection {
+  padding: 120px 20px 60px;
+  background: #eaf6f6;
+}
+.TopSection h1 {
+  font-size: 2.8rem;
+  color: #ff3399;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+}
+.about h2 {
+  color: #ff66b2;
+}
+.Ara {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 200px;
+  border: 5px solid #ffb6d9;
+}
+
+/* Calculator */
+.calculator-section {
+  padding: 60px 20px;
+  background: #fff0f5;
+}
+.calculator {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.calculator input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.4rem;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 2px solid #ffb6d9;
+  border-radius: 10px;
+}
+.calculator .keys {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+}
+.calculator button {
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ffe6f0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.calculator button:hover {
+  background: #ffb6d9;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #ffe6f0;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 50px;
+}

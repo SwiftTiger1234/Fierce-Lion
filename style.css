@@ -1,0 +1,163 @@
+/* ==============================
+   BODY
+   ============================== */
+body {
+  text-align: center; /* Center all text */
+  font-size: 35px;
+  font-weight: 1000;
+  margin: 0; /* Remove default body margin */
+  background: linear-gradient(120deg, skyblue, yellow); /* Main background gradient */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+/* ==============================
+   HEADINGS
+   ============================== */
+h1 {
+  color: blue;
+  font-size: 45px;
+  font-weight: 1000;
+  font-style: oblique;
+  margin: 0; /* Remove default margin */
+}
+
+h2 {
+  margin-bottom: 10px; /* Space below subheadings */
+}
+
+/* ==============================
+   TOP SECTION
+   ============================== */
+.TopSection {
+  background: linear-gradient(120deg, #ff99df, #66ffff); /* Gradient for top section */
+  position: relative; /* Required for positioning clouds */
+  padding-bottom: 0; /* Remove extra space */
+  box-shadow:
+    0 0 20px #ffffff,
+    0 0 40px #ff6ec4,
+    0 0 60px #7873f5; /* Glowing effect */
+}
+
+/* Clouds positioning */
+.cloudA, .cloudB {
+  position: absolute; /* Place anywhere over top section */
+  height: 50px; /* Size of clouds */
+}
+.cloudA { top: 40%; left: 10%; }
+.cloudB { top: 75%; left: 80%; }
+
+/* Land image styling */
+.land {
+  display: block;       /* Make block element */
+  margin: 0 auto;       /* Center horizontally */
+  max-width: 100%;      /* Make responsive */
+}
+
+/* HR line styling */
+.TopSection hr {
+  margin: 0; /* Remove extra spacing */
+  border: none; /* Remove default border */
+  border-top: 2px solid #fff; /* Custom white line */
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+.button {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.button button {
+  background: transparent;
+  border: 2px solid BLUE; /* White border */
+  color: #FF66CC; /* Text color */
+  border-radius: 30px;
+  padding: 10px 25px 8px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px; /* Space between buttons */
+  transition: 0.3s; /* Smooth hover */
+  font-weight: 1000
+}
+
+.button button:hover {
+  background: rgba(255,255,255,0.2); /* Slight white overlay on hover */
+}
+
+/* ==============================
+   BIO SECTION
+   ============================== */
+.Bio {
+  margin-top: 0; /* Remove extra top space */
+}
+
+.Ara {
+  border-radius: 50%; /* Make round image */
+  border: 2px solid #fff; /* White border */
+  height: 200px;
+  width: 200px;
+  display: block; /* Center image */
+  margin: 20px auto;
+}
+
+/* ==============================
+   CALCULATOR
+   ============================== */
+.calculator {
+  background: pink;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Slight shadow */
+  width: 260px;
+  height: 260px;
+  margin: 40px auto; /* Center calculator */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space buttons evenly */
+}
+
+/* Calculator display */
+.calculator .display {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: right; /* Right align text */
+  font-size: 18px;
+}
+
+/* Calculator buttons grid */
+.calculator .buttons {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 6px; /* Space between buttons */
+}
+
+.calculator button {
+  border: none;
+  border-radius: 12px;
+  background: #f0d9ff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calculator button:hover {
+  background: #d8bfff;
+}
+
+/* Equal button special styling */
+.calculator .equal {
+  grid-column: span 2;
+  background: #c1f7d5;
+}
+
+.calculator .equal:hover {
+  background: #9ae6b4;
+}

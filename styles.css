@@ -1,0 +1,77 @@
+h1{
+  color: Blue;
+  font-size: 35px
+}
+.p{
+  font-size: 20px
+}
+body{
+    font-size: 24px;
+    background-color: #00ffff
+}
+.GOD{
+  font-size: 45px;
+  text-align: center;
+  color: Green;
+}
+       /* THIS IS FOR THE LION*/
+       /* START */
+.A{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ff0000  ; /* This is Colour Red from CSS color Picker on W3 schools */
+}
+.A img {
+  width: 400px;
+  height: 500px;    /*Luke 18:1, John 4:21-24*/
+}
+.description{
+  font-size: 25px;
+  height: 300px;
+  width: auto;
+  background-color: PINK;
+  text-align: left;
+}
+    /* END */
+
+          /* THIS IS FOR THE CAT */
+           /* START */
+.B{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffa500;    /* This is Color Red from CSS Color Picker in W3 schools*/
+}
+.B img{
+  Width: 659.7px;
+  height: 500px
+}
+.description{
+  font-size: 25px;
+  background-color: PINK;
+  height: 200px;
+  width: auto;
+}
+     /* END */
+
+       /* THIS IS FOR THE UNICORN*/
+         /* START */
+.C{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffff00
+}
+.C img{
+  width: 400px;
+  height: 500px
+}
+.description{
+  font-size: 25px;
+  background-color: PINK;
+  height: 200px;
+  width: auto;
+}
+         /* END */
+
+        /* THIS IS FOR THE POMERANIAN*/
+            /* START*/
+.D

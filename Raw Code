@@ -1,0 +1,538 @@
+body{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 10000;
+  background-color: blue;
+  margin-top: 0; /* Used to remove the litle space remaining at the top of the Top section or simply said as the top of the website */
+  margin-left: 0; /* Used To remove the litle space remaining at the left side of the top Section */
+  margin-right: 0; /* Used to remove the litle space at the right hand side of the Top Section */
+  background: linear-gradient(120deg, skyblue, Yellow);
+}
+h1{
+  color: BLUE;
+  font-size: 45px;
+  font-weight: 10000;
+  font-style: oblique; /* This makes the Text a bit Bent */
+  margin-top: 0; /* To Remove Space at the Margin Top */
+  margin-bottom: 0;
+  font-family:
+}
+.TopSection{
+  background: linear-gradient(120deg, #ff99df, #66ffff);
+  box-shadow:
+    0 0 20px #ffffff,   /* soft white glow */
+    0 0 40px #ff6ec4,   /* pink glow */
+    0 0 60px #7873f5;   /* purple glow */
+
+}
+.cloudA{
+  height: 50PX;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.cloudB{
+  height: 50px;
+  position: absolute;
+  left: 80%;
+  top: 75%
+}
+.land{
+  margin: 0;       /* centers it horizontally */
+}
+.Ara{
+  border-radius: 70%;
+  border-width: thin;
+  height: 200px;
+  width:
+}
+.button{
+  text-align: center;
+  border: none;
+  margin: 20px;
+  padding: 20px
+}
+button .b{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  border: none;
+  border-radius: 30px;
+
+}
+}
+.Bio{
+  margin-top: 0
+}
+.Font{
+  font-family: Dancing-Script
+}
+
+
+/* 🎀 Calculator container box */
+.calculator {
+  background: pink;              /* White background */
+  padding: 15px;                 /* Space inside */
+  border-radius: 20px;           /* Rounded corners */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Soft shadow for 3D look */
+  width: 260px;                  /* Fixed width */
+  height: 260px;                 /* Fixed height (square shape) */
+  display: flex;                 /* Flexbox layout */
+  flex-direction: column;        /* Stack items vertically */
+  justify-content: space-between;/* Even spacing top to bottom */
+}
+
+/* 📟 Display screen */
+.calculator .display {
+  width: 90%;                   /* Full width of container */
+  height: 40px;                  /* Height of display */
+  margin-bottom: 10px;           /* Space below display */
+  border: 1px solid #ddd;        /* Light grey border */
+  border-radius: 12px;           /* Rounded corners */
+  padding: 8px;                  /* Space inside text box */
+  text-align: right;             /* Numbers align to the right */
+  font-size: 18px;               /* Text size */
+}
+
+/* 🔲 Buttons grid */
+.calculator .buttons {
+  flex: 1;                       /* Take remaining space */
+  display: grid;                 /* Grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 1fr);    /* 4 equal rows */
+  gap: 6px;                      /* Space between buttons */
+}
+
+/* 🔘 All buttons */
+.calculator button {
+  border: none;                  /* Remove default button border */
+  border-radius: 12px;           /* Rounded buttons */
+  background: #f0d9ff;           /* Light purple background */
+  font-size: 16px;               /* Text size */
+  cursor: pointer;               /* Hand cursor on hover */
+  transition: 0.2s;              /* Smooth hover effect */
+}
+
+/* 🌸 Button hover effect */
+.calculator button:hover {
+  background: #d8bfff;           /* Slightly darker purple when hovered */
+}
+
+/* 🟩 Equal button (spans 2 columns wide) */
+.calculator .equal {
+  grid-column: span 2;           /* Makes "=" button twice as wide */
+  background: #c1f7d5;           /* Green background */
+}
+
+/* 🌱 Equal hover effect */
+.calculator .equal:hover {
+  background: #9ae6b4;           /* Darker green on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>✨My Personal Website✨</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+
+    <div class="button">
+      <button class="Work" onclick="location.href='Work With Us.html'">Work</button>
+      <button class="About" onclick="location.href='About Us.html'">About Us</button>
+      <button class="Contact" onclick="location.href='Contact Me.html'">Contact Me</button>
+    </div>
+
+  <!-- My Biography-->
+  <section class="TopSection">
+    <h1 class="name">✨Ariba Araoluwa✨</h1>
+    <p class="tagline">Designer. Dreamer. Creator. 💖</p>
+    <img class="cloudA" src="CLOUD.png" alt="Cloud">
+    <img class="cloudB" src="CLOUD.png" alt="Cloud">
+    <img class="land" src="land.svg" alt="Land">
+      <hr>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="Bio">
+    <h2>About Me</h2>
+    <p>My Name is Ariba Araoluwa</p>
+    <img class="Ara" src="ARA'S CUTE PHOTO.jpg" alt="ARA">
+  </section>
+
+  <hr>
+
+  <div class="calculator">
+  <input type="text" class="display" disabled>
+  <div class="buttons">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>÷</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>×</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>−</button>
+    <button>0</button>
+    <button>.</button>
+    <button class="equal">=</button>
+    <button>+</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>✨My Personal Website✨</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon -->
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION BUTTONS
+       ============================== -->
+  <div class="button">
+    <!-- Each button links to a different page -->
+    <button class="Work" onclick="location.href='Work With Us.html'">Work</button>
+    <button class="About" onclick="location.href='About Us.html'">About Us</button>
+    <button class="Contact" onclick="location.href='Contact Me.html'">Contact Me</button>
+  </div>
+
+  <!-- ==============================
+       TOP SECTION / BIOGRAPHY
+       ============================== -->
+  <section class="TopSection">
+    <h1 class="name">✨Ariba Araoluwa✨</h1> <!-- Main name heading -->
+    <p class="tagline">Designer. Dreamer. Creator. 💖</p> <!-- Subtitle / tagline -->
+
+    <!-- Decorative Clouds -->
+    <img class="cloudA" src="CLOUD.png" alt="Cloud">
+    <img class="cloudB" src="CLOUD.png" alt="Cloud">
+
+    <!-- Land image at bottom -->
+    <img class="land" src="land.svg" alt="Land">
+
+    <!-- Divider line -->
+    <hr>
+  </section>
+
+  <!-- ==============================
+       ABOUT SECTION
+       ============================== -->
+  <section class="Bio">
+    <h2>About Me</h2> <!-- Section heading -->
+    <p>My Name is Ariba Araoluwa</p> <!-- Short description -->
+    <img class="Ara" src="ARA'S CUTE PHOTO.jpg" alt="ARA"> <!-- Profile image -->
+  </section>
+
+  <!-- ==============================
+       CALCULATOR SECTION
+       ============================== -->
+  <div class="calculator">
+    <input type="text" class="display" disabled> <!-- Calculator display -->
+    <div class="buttons"> <!-- Grid for calculator buttons -->
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>÷</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>×</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>−</button>
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+      <button>+</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== 🌈 GENERAL BODY STYLING ==================== */
+body {
+  text-align: center; /* Centers text inside the body */
+  font-size: 35px; /* Base font size for text */
+  font-weight: 10000; /* Extra bold text (higher = bolder) */
+  background-color: blue; /* Fallback background color */
+  margin-top: 0; /* Removes white gap at the very top */
+  margin-left: 0; /* Removes white gap on the left */
+  margin-right: 0; /* Removes white gap on the right */
+  background: linear-gradient(120deg, skyblue, yellow); /* Gradient background for body */
+}
+
+/* ==================== 🔵 MAIN HEADING STYLING ==================== */
+h1 {
+  color: blue; /* Text color for headings */
+  font-size: 45px; /* Heading size */
+  font-weight: 10000; /* Very bold text */
+  font-style: oblique; /* Slightly slanted text */
+  margin-top: 0; /* Removes gap above heading */
+  margin-bottom: 0; /* Removes gap below heading */
+  font-family: sans-serif; /* Sets a clean default font (you can change this) */
+}
+
+/* ==================== 🎨 TOP SECTION (HEADER AREA) ==================== */
+.TopSection {
+  background: linear-gradient(120deg, #ff99df, #66ffff); /* Gradient background for top */
+  box-shadow:
+    0 0 20px #ffffff,  /* Soft white glow */
+    0 0 40px #ff6ec4,  /* Pink glow */
+    0 0 60px #7873f5;  /* Purple glow */
+}
+
+/* ==================== ☁️ CLOUD IMAGES ==================== */
+.cloudA {
+  height: 50px; /* Size of cloud A */
+  position: absolute; /* Positioned freely on the page */
+  top: 40%; /* Moves it 40% from the top */
+  left: 10%; /* Moves it 10% from the left */
+}
+
+.cloudB {
+  height: 50px; /* Size of cloud B */
+  position: absolute; /* Positioned freely on the page */
+  top: 75%; /* Moves it down 75% */
+  left: 80%; /* Moves it 80% from the left */
+}
+
+/* ==================== 🌍 LAND IMAGE ==================== */
+.land {
+  margin: 0; /* Ensures land image sits neatly without extra space */
+  margin: 0;           /* removes top and bottom margin */
+  padding: 0;          /* removes extra padding if any */
+
+  border: none;        /* optional: removes default border */
+
+}
+
+/* ==================== 👩 PROFILE IMAGE (ARA) ==================== */
+.Ara {
+  border-radius: 70%; /* Makes profile image rounded (circular) */
+  border-width: thin; /* Thin border */
+  height: 200px; /* Height of image */
+  width: auto; /* Auto width to keep proportions */
+}
+
+/* ==================== 🔘 BUTTON CONTAINER ==================== */
+.button {
+  text-align: center; /* Aligns all buttons in the middle */
+  border: none; /* Removes unwanted borders */
+  margin: 20px; /* Space outside the button group */
+  padding: 20px; /* Space inside the button group */
+}
+
+/* ==================== 🔘 NAVIGATION BUTTONS ==================== */
+button.b {
+  position: fixed; /* Stays in place when scrolling */
+  top: 0; /* Sticks to the very top */
+  left: 0; /* Sticks to the very left */
+  width: 100%; /* Stretches across the screen */
+  text-align: center; /* Centers button text */
+  margin-top: 0; /* Removes extra gap at the top */
+  border: none; /* Removes border */
+  border-radius: 30px; /* Rounds the button edges */
+}
+
+/* ==================== 📖 BIO SECTION ==================== */
+.Bio {
+  margin-top: 0; /* Removes unwanted top margin */
+}
+
+/* ==================== ✨ CUSTOM FONT ==================== */
+.Font {
+  font-family: Dancing-Script; /* Applies Dancing Script font if installed */
+}
+
+/* ==================== 🧮 CALCULATOR BOX ==================== */
+.calculator {
+  background: pink; /* Calculator background color */
+  padding: 15px; /* Space inside the calculator */
+  border-radius: 20px; /* Rounds calculator corners */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Soft shadow effect */
+  width: 260px; /* Fixed width */
+  height: 260px; /* Fixed height (square look) */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Even spacing inside */
+}
+
+/* ==================== 📟 CALCULATOR DISPLAY ==================== */
+.calculator .display {
+  width: 90%; /* Display takes up most of the width */
+  height: 40px; /* Height of the display screen */
+  margin-bottom: 10px; /* Space below the display */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 8px; /* Inner padding */
+  text-align: right; /* Aligns numbers to the right */
+  font-size: 18px; /* Text size inside display */
+}
+
+/* ==================== 🔲 CALCULATOR BUTTONS ==================== */
+.calculator .buttons {
+  flex: 1; /* Buttons take the remaining space */
+  display: grid; /* Grid layout for calculator buttons */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+  gap: 6px; /* Space between buttons */
+}
+
+/* ==================== 🔘 ALL CALCULATOR BUTTONS ==================== */
+.calculator button {
+  border: none; /* Removes default button border */
+  border-radius: 12px; /* Rounds buttons */
+  background: #f0d9ff; /* Light purple background */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Shows pointer on hover */
+  transition: 0.2s; /* Smooth hover effect */
+}
+
+/* ==================== 🌸 CALCULATOR BUTTON HOVER EFFECT ==================== */
+.calculator button:hover {
+  background: #d8bfff; /* Darker purple when hovered */
+}
+
+/* ==================== 🟩 EQUAL BUTTON SPECIAL ==================== */
+.calculator .equal {
+  grid-column: span 2; /* Makes "=" button twice as wide */
+  background: #c1f7d5; /* Green background */
+}
+
+/* ==================== 🌱 EQUAL BUTTON HOVER ==================== */
+.calculator .equal:hover {
+  background: #9ae6b4; /* Darker green when hovered */
+}
