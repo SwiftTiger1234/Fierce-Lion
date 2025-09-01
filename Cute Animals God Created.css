@@ -1,0 +1,140 @@
+h1{
+  color: blue;
+  font-size: 60px;
+  text-align: center;
+  font-style: oblique;
+  font-weight: 1000PX;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+/* Rainbow Glowing Name Animation */
+.Ariba{
+  font-size: 48px;
+  animation: rainbowGlow 3s infinite alternate;
+}
+@keyframes rainbowGlow {
+  0%   { color: red; text-shadow: 0 0 10px red; }
+  20%  { color: orange; text-shadow: 0 0 10px orange; }
+  40%  { color: yellow; text-shadow: 0 0 10px yellow; }
+  60%  { color: black; text-shadow: 0 0 10px black; }
+  80%  { color: blue; text-shadow: 0 0 10px blue; }
+  100% { color: purple; text-shadow: 0 0 10px purple; }
+}
+.Intro{
+  text-align: center;
+  color: black;
+  font-weight: 1000
+}
+hr{
+  height: 2px;
+  background-color: black;
+}
+.p{
+  font-size: 20px
+}
+body{
+    font-size: 24px;
+    background: linear-gradient(120deg, #ff99df, skyblue); /* Gradient background */
+  }
+}
+hr{
+  background-color: black;
+  height: 2px;
+}
+.GOD{
+  font-size: 45px;
+  text-align: center;
+  color: #ff00ff;
+}
+       /* THIS IS FOR THE LION*/
+       /* START */
+.A{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ff0000  ; /* This is Colour Red from CSS color Picker on W3 schools */
+}
+.A img {
+  width: 400px;
+  height: 500px;    /*Luke 18:1, John 4:21-24*/
+}
+         /* I made it .descriptionA bcos other descriptions havre the exact same style making it hard to cahange the code */
+.descriptionA{
+  font-size: 25px;
+  height: 250px;
+  width: auto;
+  background-color: PINK;
+  text-align: left;
+}
+    /* END */
+
+          /* THIS IS FOR THE CAT */
+           /* START */
+.B{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffa500;    /* This is Color Red from CSS Color Picker in W3 schools*/
+}
+.B img{
+  Width: 659.7px;
+  height: 500px
+}
+.description{
+  font-size: 25px;
+  background-color: PINK;
+  height: 200px;
+  width: auto;
+}
+     /* END */
+
+       /* THIS IS FOR THE UNICORN*/
+         /* START */
+.C{
+  display: flex;
+  align-items: flex-end;
+  background-color: #ffff00
+}
+.C img{
+  width: 400px;
+  height: 500px
+}
+.description{
+  font-size: 25px;
+  background-color: PINK;
+  height: 200px;
+  width: auto;
+}
+         /* END */
+
+        /* THIS IS FOR THE POMERANIAN*/
+            /* START*/
+.D{
+  display: flex;
+  align-items: flex-end;
+  background-color: #00e600;
+}
+.D img{
+  width: 400px;
+  height: 500px;
+}
+       /* I made it .descriptionD bcos other descriptions havre the exact same style making it hard to cahange the code */
+.descriptionD{
+  font-size: 25px;
+  background-color: PINK;
+  height: 215px;
+  width: auto;
+}
+          /* END */
+
+  a {
+   display: block;
+   text-align: center;
+   margin-top: 15px;
+   color: blue;
+   font-weight: bold;
+   text-decoration: none;
+   transition: 0.3s;
+    }
+
+  a:hover {
+  color: gold;
+          }

@@ -1,0 +1,322 @@
+/* ==============================
+   BODY
+   ============================== */
+body {
+  text-align: center; /* Center all text inside body */
+  font-size: 35px; /* Base font size for body text */
+  font-weight: 1000; /* Bold weight */
+  margin: 0; /* Remove default browser margin */
+  font-family: Arial, sans-serif; /* Use Arial font */
+  background: linear-gradient(120deg, #ff99df, #66ffff); /* Gradient background */
+}
+/* Rainbow Glowing Name Animation */
+.name{
+  font-size: 48px;
+  animation: rainbowGlow 3s infinite alternate;
+}
+@keyframes rainbowGlow {
+  0%   { color: red; text-shadow: 0 0 10px red; }
+  20%  { color: orange; text-shadow: 0 0 10px orange; }
+  40%  { color: yellow; text-shadow: 0 0 10px yellow; }
+  60%  { color: black; text-shadow: 0 0 10px black; }
+  80%  { color: blue; text-shadow: 0 0 10px blue; }
+  100% { color: purple; text-shadow: 0 0 10px purple; }
+}
+
+/* ==============================
+   HEADINGS
+   ============================== */
+h1 {
+  color: blue; /* Heading text color */
+  font-size: 30px; /* Heading font size */
+  font-weight: 1000; /* Bold heading */
+  margin: 0; /* Remove default margin */
+}
+.down{
+  color: blue;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.name{
+    color: blue;
+    font-size: 60px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 1000PX;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+.tagline{
+  margin-top: 4px;
+}
+.paragraph {
+  font-size: 30px; /* Paragraph font size */
+  font-weight: 100; /* Light weight */
+}
+
+.warning {
+  color: black; /* Warning text color */
+  font-size: 30px; /* Size of warning */
+  margin-top: 10px; /* Space above warning */
+}
+
+h2 {
+  margin-bottom: 10px; /* Space below subheadings */
+}
+
+/* ==============================
+   TOP SECTION
+   ============================== */
+.TopSection {
+  background: linear-gradient(120deg, skyblue, yellow); /* Background gradient */
+  position: relative; /* Needed for absolute positioning inside */
+  padding-bottom: 0; /* Remove bottom padding */
+  box-shadow:
+    0 0 20px #ffffff,  /* White glow */
+    0 0 40px #ff6ec4,  /* Pink glow */
+    0 0 60px #7873f5;  /* Purple glow */
+}
+
+/* Clouds positioning */
+.cloudA, .cloudB {
+  position: absolute; /* Position clouds freely */
+  height: 50px; /* Cloud height */
+}
+
+.cloudA { top: 40%; left: 10%; } /* Cloud A position */
+.cloudB { top: 75%; left: 80%; } /* Cloud B position */
+
+/* Land image styling */
+.land {
+  display: block; /* Display as block */
+  margin: 0 auto; /* Center horizontally */
+  max-width: 100%; /* Responsive scaling */
+}
+
+/* HR line styling inside top section */
+.TopSection hr {
+  margin: 0; /* Remove spacing */
+  border: none; /* No default border */
+  border-top: 2px solid #fff; /* Custom white line */
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+/* Button background container */
+.button {
+  border: 2px solid BLUE; /* Blue border */
+  color: #FF66CC; /* Text color */
+  padding: 10px 25px 8px; /* Padding around */
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: 0.3s; /* Smooth hover effect */
+  font-weight: 1000; /* Bold text */
+  background: linear-gradient(120deg, yellow, orange); /* Gradient background */
+}
+
+/* Styling the actual buttons like Home, About, Contact */
+.button button {
+  border: 2px solid BLUE; /* Blue border */
+  color: #FF66CC; /* Text color */
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 25px 8px; /* Inside spacing */
+  font-size: 20px; /* Text size */
+  cursor: pointer; /* Pointer on hover */
+  margin: 0 10px; /* Space between buttons */
+  transition: 0.3s; /* Smooth hover transition */
+  font-weight: 1000; /* Bold text */
+  background: linear-gradient(120deg, #ff99df, #66ffff); /* Gradient background */
+}
+         /* Styling the actual buttons like Home, About, Contact */
+              /* Rainbow Glowing Button Animation */
+                        /* Start */
+.button button{
+  font-size: 25px;
+  animation: rainbowGlow 3s infinite alternate;
+}
+@keyframes rainbowGlow {
+  0%   { color: red; text-shadow: 0 0 10px red; }
+  20%  { color: orange; text-shadow: 0 0 10px orange; }
+  40%  { color: yellow; text-shadow: 0 0 10px yellow; }
+  60%  { color: black; text-shadow: 0 0 10px black; }
+  80%  { color: blue; text-shadow: 0 0 10px blue; }
+  100% { color: purple; text-shadow: 0 0 10px purple; }
+}
+                      /* End */
+
+.button button:hover {
+  background: rgba(255,255,255,0.2); /* White overlay on hover */
+}
+
+/* ==============================
+   BIO SECTION
+   ============================== */
+.Bio {
+  margin-top: 0; /* Remove top margin */
+}
+
+.about {
+  color: Red; /* Text color */
+  font-size: 30px; /* Text size */
+}
+
+.Ara {
+  border-radius: 10%; /* Slightly rounded edges */
+  border: 2px solid #fff; /* White border */
+  height: 500px; /* Fixed height */
+  width: 400px; /* Fixed width */
+  display: block; /* Block element */
+  margin: 20px auto; /* Center with margin */
+}
+
+/* ==============================
+   CALCULATOR
+   ============================== */
+.calculator {
+  background: pink; /* Calculator background */
+  padding: 15px; /* Inside spacing */
+  border-radius: 20px; /* Rounded edges */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Soft shadow */
+  width: 260px; /* Fixed width */
+  height: 260px; /* Fixed height */
+  margin: 40px auto; /* Center with margin */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange vertically */
+  justify-content: space-between; /* Space between elements */
+}
+
+.cute {
+  margin-top: 40px; /* Add top margin */
+}
+
+/* Calculator display */
+.calculator .display {
+  width: 90%; /* Width of display */
+  height: 40px; /* Height of display */
+  margin: 0 auto 10px auto; /* Center + bottom margin */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 8px; /* Inside padding */
+  text-align: right; /* Align numbers right */
+  font-size: 18px; /* Font size */
+}
+
+/* Calculator button grid */
+.calculator .buttons {
+  flex: 1; /* Take remaining space */
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+  gap: 6px; /* Space between buttons */
+}
+
+.calculator button {
+  border: none; /* Remove border */
+  border-radius: 12px; /* Rounded edges */
+  background: #f0d9ff; /* Button background */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer on hover */
+  transition: 0.2s; /* Smooth hover */
+}
+.calculator {
+  position: relative;
+  display: inline-block;
+}
+
+                                  /* Calculator Glow */
+                                   /* START */
+.calculator {
+  height: auto;
+   /* pointer-events: none; ❌ remove this, It does not allow you to click anything on your screen
+  e.g calculator buttons on the screen */
+  user-select: none;
+  border-radius: 20px;
+  animation: rainbowPhotoGlow 3s infinite alternate;
+}
+
+@keyframes rainbowPhotoGlow {
+  0% { box-shadow: 0 0 30px red; }
+  20% { box-shadow: 0 0 30px orange; }
+  40% { box-shadow: 0 0 30px yellow; }
+  60% { box-shadow: 0 0 30px BLACK; }
+  80% { box-shadow: 0 0 30px blue; }
+  100% { box-shadow: 0 0 30px purple; }
+}
+                             /* END */
+
+.calculator button:hover {
+  background: #d8bfff; /* Darker purple on hover */
+}
+
+/* Equal button special styling */
+.calculator .equal {
+  grid-column: span 2; /* Stretch across 2 columns */
+  background: #c1f7d5; /* Green background */
+}
+
+.calculator .equal:hover {
+  background: #9ae6b4; /* Darker green hover */
+}
+
+/* Global HR style */
+hr {
+  background-color: black; /* Black line */
+  height: 2px; /* Thickness */
+}
+
+/* Protected Images + Rainbow Glow (No Spin) */
+.protected-image {
+  position: relative;
+  display: inline-block;
+}
+.protected-image img {
+  width: 400px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 20px;
+  animation: rainbowPhotoGlow 3s infinite alternate;
+}
+
+@keyframes rainbowPhotoGlow {
+  0% { box-shadow: 0 0 30px red; }
+  20% { box-shadow: 0 0 30px orange; }
+  40% { box-shadow: 0 0 30px yellow; }
+  60% { box-shadow: 0 0 30px BLACK; }
+  80% { box-shadow: 0 0 30px blue; }
+  100% { box-shadow: 0 0 30px purple; }
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+.footer {
+  background: #ffe6f0; /* Light pink background */
+  padding: 20px; /* Inside spacing */
+  font-size: 35px; /* Large text */
+  color: pink; /* Text color */
+  margin-top: 35px; /* Space above footer */
+}
+
+.Hosted{
+  color: blue;
+  font-weight: 100px;
+}
+.Month{
+  font-size: 50px;
+  font-weight: 1000;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: Red;
+}
+.Prayer{
+  font-size: 50px;
+  font-weight: 1000;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: Red;
+}
